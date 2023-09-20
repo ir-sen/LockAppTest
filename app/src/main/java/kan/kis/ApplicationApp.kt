@@ -6,7 +6,6 @@ import android.content.Context
 import android.os.Build
 import android.util.Log
 import androidx.annotation.RequiresApi
-import kan.kis.lockapp.service.ListenAnotherAppService
 
 class ApplicationApp: Application() {
 
@@ -16,7 +15,6 @@ class ApplicationApp: Application() {
         super.onCreate()
         val answer = getTopPackageName(this)
         Log.d("TAGApplication", "some $answer")
-        startService(ListenAnotherAppService().getIntent(this))
 
     }
 
